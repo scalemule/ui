@@ -1,0 +1,90 @@
+{
+  "name": "@scalemule/ui",
+  "version": "0.0.1",
+  "description": "ScaleMule shared UI components and utilities",
+  "//exports": "\".\": convenience shorthand that intentionally aliases \"./phone\". Both are public API — do not remove either.",
+  "exports": {
+    ".": {
+      "types": "./dist/phone/index.d.ts",
+      "import": "./dist/phone/index.mjs",
+      "require": "./dist/phone/index.js"
+    },
+    "./phone": {
+      "types": "./dist/phone/index.d.ts",
+      "import": "./dist/phone/index.mjs",
+      "require": "./dist/phone/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.mjs",
+      "require": "./dist/react/index.js"
+    }
+  },
+  "main": "dist/phone/index.js",
+  "module": "dist/phone/index.mjs",
+  "types": "dist/phone/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "phone": [
+        "dist/phone/index.d.ts"
+      ],
+      "react": [
+        "dist/react/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@types/react": "^18.2.0",
+    "jsdom": "^28.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "keywords": [
+    "scalemule",
+    "ui",
+    "phone-input",
+    "country-select",
+    "react",
+    "components"
+  ],
+  "author": "ScaleMule Inc. <support@scalemule.com>",
+  "license": "MIT",
+  "homepage": "https://scalemule.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scalemule/ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scalemule/ui/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
