@@ -14,4 +14,10 @@ export default defineConfig([
     clean: false, // phone/index.* already written by first config
     external: ['react', 'react-dom'],
   },
+  {
+    entry: { 'share/index': 'src/share/index.ts' },
+    format: ['cjs', 'esm'],
+    dts: true,
+    clean: false,
+  },
 ])
