@@ -12,3 +12,12 @@ export type { PoweredByProps, PoweredByClassNames } from './powered-by'
 
 export { ShareCTA } from './share-cta'
 export type { ShareCTAProps, ShareCTAClassNames } from './share-cta'
+
+export { NotificationToast, NotificationContainer } from './notification-toast'
+export type {
+  NotificationToastProps,
+  NotificationToastClassNames,
+  NotificationContainerProps,
+  NotificationContainerClassNames,
+  ToastPosition,
+} from './notification-toast'
